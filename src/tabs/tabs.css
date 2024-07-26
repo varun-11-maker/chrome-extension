@@ -1,0 +1,169 @@
+/* src/tabs.css */
+
+/* General styles for the container */
+div {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    display: flex; /* Use Flexbox for horizontal alignment */
+    gap: 20px; /* Space between the widgets */
+  }
+  
+  /* Ensure both widgets have the same height */
+  .weather-widget,
+  .google-slides-widget {
+    height: 400px; /* Set a fixed height for both widgets */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is spaced evenly */
+  }
+  
+  /* Specific styles for Weather Widget */
+  .weather-widget {
+    width: 400px; /* Fixed width for Weather Widget */
+  }
+  
+  .weather-widget h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .weather-widget p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .weather-widget input {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .weather-widget button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .weather-widget button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Specific styles for Google Slides Widget */
+  .google-slides-widget {
+    flex: 2; /* Increase width by flex-grow factor */
+    min-width: 600px; /* Set a minimum width */
+  }
+  
+  .google-slides-widget iframe {
+    border: none;
+    border-radius: 8px;
+    width: 100%; /* Ensure iframe takes full width */
+    height: 100%; /* Ensure iframe takes full height */
+  }
+  .pomodoro-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px; /* Same width as other widgets */
+    height: 400px; /* Same height as other widgets */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+  }
+  
+  .pomodoro-timer h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .pomodoro-timer .timer-display {
+    font-size: 4rem; /* Larger font size for better visibility */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Dark color for contrast */
+    background: #fff; /* White background for readability */
+    border: 2px solid #007bff; /* Blue border to highlight the timer */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .pomodoro-timer .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between buttons */
+    justify-content: center;
+    margin-top: 10px; /* Space above buttons */
+  }
+  
+  .pomodoro-timer button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #007bff; /* Primary color */
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+  }
+  
+  .pomodoro-timer button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  .pomodoro-timer .button-secondary {
+    background-color: #6c757d; /* Secondary color */
+  }
+  
+  .pomodoro-timer .button-secondary:hover {
+    background-color: #5a6268; /* Darker shade on hover */
+  }
+  /* src/googleCalendar.css */
+
+/* Google Calendar Widget Styles */
+.google-calendar-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px; /* Same width as other widgets */
+  height: 400px; /* Same height as other widgets */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+}
+
+.google-calendar-widget h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.google-calendar-widget iframe {
+  border: none;
+  border-radius: 8px;
+  width: 100%; /* Ensure iframe takes full width */
+  height: 100%; /* Ensure iframe takes full height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
